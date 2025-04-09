@@ -15,7 +15,3 @@ wheels/
 # library
 educhain-main
 
-#test Files
-test.py
-test2.py
-test3.py

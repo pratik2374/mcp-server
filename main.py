@@ -2,11 +2,11 @@ from mcp.server.fastmcp import FastMCP # Import the FastMCP for MCP server
 from dotenv import load_dotenv
 import os
 from langchain_openai import ChatOpenAI
-from educhain import Educhain, LLMConfig    # Import Educhain
+from educhain import Educhain, LLMConfig    # Import Educhain Library
 from io import StringIO
 
 from educhain.models.qna_models import MCQList
-from educhain.models.content_models import FlashcardSet  #Importing Educhain classes
+from educhain.models.content_models import FlashcardSet  #Importing Educhain classes to parse the output 
 from educhain.models.content_models import LessonPlan
 
 
@@ -43,6 +43,9 @@ async def generate_Lessonplan(lesson_topic:str):
   detailed_lesson = client_llama3.content_engine.generate_lesson_plan(
       topic=lesson_topic,
   )
+
+  # Output formatting function
+  # This function converts the lesson plan object to a string format
   def get_lesson_plan_as_string(lesson: LessonPlan) -> str:
     output = StringIO()
 
@@ -105,6 +108,10 @@ async def generate_flashcards(topic: str):
         A list of flashcards.
     """
     flashcard_set = client_llama3.content_engine.generate_flashcards(topic)
+
+    # Output formatting function
+    # This function converts the flashcard set object to a string format
+    # and includes optional fields if they exist
     def get_flashcard_set_as_string(flashcard_set: FlashcardSet) -> str:
         output = StringIO()
 

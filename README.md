@@ -3,7 +3,13 @@ MCP(Model Context Protocol) helps you build agents and complex workflows on top 
 - We can update the LLM for current or relevant data that has not yet be known by LLM
 - A growing list of pre-built integrations that your LLM can directly plug into.  
 - The flexibility to switch between LLM providers and vendors.  
-- Best practices for securing your data within your infrastructure.  
+- Best practices for securing your data within your infrastructure. 
+
+# File Structure
+- `main.py` - main file to run MCP server
+- `Task1 setup` - Folder having individual educhain function and response generating in required format for MCP server
+- `Response` - response folder that has all output images and required Pdf
+
 
 ## Overview  
 MCP runs on STDIO, where standarized input is given to server and it return standarized output and these are managed by client.
@@ -30,24 +36,16 @@ This project allows AI assistants, such as **Claude Desktop**(MCP host here), to
 - Preparing lesson plans for teachers or students.  
 - Creating flashcards for study sessions.  
 
-## Screenshots
-**Flashcards**
-
-![Flashcard Example](output_img/FlashCrads1.png)
-
-**MCQ Generation**
-
-![Flashcard Example](output_img/MCQ1.png)
-
-
-**Flashcards**
-![Flashcard Example](output_img/lesson1.png)
-
 
 ## Technology Stack 
 - **uv**: For basic installation and to run the application 
 - **Educhain Library**: Core library used to build the MCP Server and Tools.  
 - **MCP Server**:  Lightweight programs that each expose specific capabilities through the standardized Model Context Protocol
+
+# References:
+- [Educhain Library](https://github.com/satvik314/educhain): Core library used to generate educational content
+- [MCP Server](https://github.com/modelcontextprotocol/python-sdk):  Used quickstart guide to get started with MCP server and tool
+
 
 ## Contact  
 For questions or support, please contact [pratikgond2005@gmail.com].  

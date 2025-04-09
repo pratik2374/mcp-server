@@ -1,0 +1,21 @@
+For setting up Calude for MCP server :
+    appended Calude_desktop_config.json with : 
+        {
+        "mcpServers": {
+            "mcp-server-demo": {
+                "command": "C:\\Users\\ABC\\.local\\bin\\uv",
+                "args": [
+                    "--directory",
+                    "C:\\Users\\ABC\\mcp-server-demo",
+                    "run",
+                    "main.py"
+                ]
+            }
+        }
+    }
+
+To individually run MCP server :(Not Used)
+uv run mai.py
+
+To run Calude with MCP, after configuring "Calude_desktop_config.json" you will see 
+server live in settings, and in search bar there will be option of tools from there Claude will be able to use MCP tools
