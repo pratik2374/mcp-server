@@ -30,7 +30,7 @@ client_llama3 = Educhain(llama3_config)
 
 # tool to genrate a lesson plan for a given topic
 @mcp.tool()
-async def generate_Lessonplan(lesson_topic:str):
+def generate_Lessonplan(lesson_topic:str):
   """
   Generate a well detailed lesson plan for a given topic
   lesson plan with main topics, subtopics, key concepts, discussion questions, hands-on activities,
@@ -98,7 +98,7 @@ async def generate_Lessonplan(lesson_topic:str):
 
 # Tool to generate flashcards of a given topic
 @mcp.tool()
-async def generate_flashcards(topic: str):
+def generate_flashcards(topic: str):
     """
     Generate flashcards for a given topic.
     Args:
@@ -155,7 +155,7 @@ async def generate_flashcards(topic: str):
 #tool to generate MCQs of a given topic and has a parameter to give extra information and number to 
 #MCQ to be generated
 @mcp.tool()  
-async def Topicwise_MCQ_Generator(query_topic: str, MCQ_number: int, extra_information:str):
+def Topicwise_MCQ_Generator(query_topic: str, MCQ_number: int, extra_information:str):
   """
   Generate multiple-choice questions with answer form a given topic with extra information.
   Generate multiple-choice questions with proper question, answer, options and explanation.

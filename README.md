@@ -43,8 +43,9 @@ This project allows AI assistants, such as **Claude Desktop**(MCP host here), to
 - **MCP Server**:  Lightweight programs that each expose specific capabilities through the standardized Model Context Protocol
 
 # References:
-- [Educhain Library](https://github.com/satvik314/educhain): Core library used to generate educational content
-- [MCP Server](https://github.com/modelcontextprotocol/python-sdk):  Used quickstart guide to get started with MCP server and tool
+- [Educhain Library](https://github.com/satvik314/educhain) : Core library used to generate educational content
+- [MCP Server](https://github.com/modelcontextprotocol/python-sdk) :  Used quickstart guide to get started with MCP server and tool
+- [MCP Website](https://modelcontextprotocol.io/docs/concepts/tools) : Used to refernces on how to setup tools in MCP
 
 
 ## Contact  

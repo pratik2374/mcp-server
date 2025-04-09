@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "mcp-server-demo": {
+            "command": "C:\\Users\\ABC\\.local\\bin\\uv",
+            "args": [
+                "--directory",
+                "C:\\Users\\ABC\\mcp-server-demo",
+                "run",
+                "main.py"
+            ]
+        }
+    }
+}
