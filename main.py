@@ -92,6 +92,8 @@ def generate_Lessonplan(lesson_topic:str):
 
     return output.getvalue()
   lesson_string = get_lesson_plan_as_string(detailed_lesson)
+  
+  return lesson_string
 
 
 
