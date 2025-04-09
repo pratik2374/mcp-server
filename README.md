@@ -30,6 +30,20 @@ This project allows AI assistants, such as **Claude Desktop**(MCP host here), to
 - Preparing lesson plans for teachers or students.  
 - Creating flashcards for study sessions.  
 
+## Screenshots
+**Flashcards**
+
+![Flashcard Example](output_img/FlashCrads1.png)
+
+**MCQ Generation**
+
+![Flashcard Example](output_img/MCQ1.png)
+
+
+**Flashcards**
+![Flashcard Example](output_img/lesson1.png)
+
+
 ## Technology Stack 
 - **uv**: For basic installation and to run the application 
 - **Educhain Library**: Core library used to build the MCP Server and Tools.  
