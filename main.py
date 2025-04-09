@@ -30,22 +30,17 @@ client_llama3 = Educhain(llama3_config)
 
 # tool to genrate a lesson plan for a given topic
 @mcp.tool()
-async def generate_Lessonplan(topic:str, duration: int, grade_level: str):
+async def generate_Lessonplan(topic:str):
   """
-  "Respond only with a JSON object using double quotes (") for all keys and string values. Do not use backticks or markdown. Example: { "topic": "Photosynthesis", "duration": 60 }"
   Generate a well detailed lesson plan for a given topic, duration, garde level and learning objectives.
   lesson plan with main topics, subtopics, key concepts, discussion questions, hands-on activities, reflective questions, and assessment ideas.
   Input Args and format :
       topic: The topic to generate a lesson plan for, eg. "Photosynthesis"
-      duration: duration of lesson in minutes, eg. 60
-      grade_level: grade level of students, eg. "High School"
   Returns:
       A well detailed lesson plan.
   """
   detailed_lesson = client_llama3.content_engine.generate_lesson_plan(
       topic=topic,
-      duration=f"{duration} minutes",
-      grade_level=grade_level
   )
   def get_lesson_plan_as_string(lesson: LessonPlan) -> str:
     output = StringIO()
